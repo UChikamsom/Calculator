@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Calculator</h1>
+        <div class="calculator-container">
+            <div class="screen">
+                <input type="text" placeholder="0" id="display">
+            </div>
+            <div class="btn-container">
+                <div class="btns">
+                    <button id="reset" onclick="display.value=''">AC</button>
+                    <button id="cos" onclick="cos()">cos</button>
+                    <button id="sin" onclick="sin()">sin</button>
+                    <button id="log" onclick="log()">log</button>
+                </div>
+
+                <div class="btns">
+                    <button id="tan" onclick="tan()">tan</button>
+                    <button class="numbers">7</button>
+                    <button class="numbers">8</button>
+                    <button class="numbers">9</button>
+
+                </div>
+                <div class="btns">
+                    <button class="numbers">4</button>
+                    <button class="numbers">5</button>
+                    <button class="numbers">6</button>
+                    <button class="numbers">*</button>
+                </div>
+                <div class="btns">
+
+                    <button class="numbers">1</button>
+                    <button class="numbers">2</button>
+                    <button class="numbers">3</button>
+                    <button class="numbers">/</button>
+                </div>
+                <div class="btns">
+                    <button class="numbers">0</button>
+                    <button class="numbers">+</button>
+                    <button class="numbers">-</button>
+                    <button id="equals" onclick="display.value=eval(display.value)">=</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
